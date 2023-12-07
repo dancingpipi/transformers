@@ -715,6 +715,7 @@ class Trainer:
                 f" If {', '.join(ignored_columns)} are not expected by `{self.model.__class__.__name__}.forward`, "
                 " you can safely ignore this message."
             )
+        print(f"this is test")
 
         columns = [k for k in signature_columns if k in dataset.column_names]
 
